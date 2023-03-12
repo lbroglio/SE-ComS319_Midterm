@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+}
+
+
+.content{
+    position: absolute;
+    top: 10vh;
+}
+
+.content h2{
+    margin-top: 3;
+    padding-left: 50px;
+    color: white;
+}
+.content p{
+    padding-left: 50px;
+    color: white
+}
+.content h3{
+    padding-left: 50px;
+    margin-top: 50px;
+    color: white;
+}
+.navbar{
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+    padding-left: 0;
+    left:  0;
+    top: 0;
+    background-color: navy;
+}
+
+.navbar h1{
+    display: inline-block;
+    color: wheat;
+    top: 50%;
+    margin-left: 30px;
+}
+
+.navbar h2{
+    color: wheat;
+    display: inline-block;
+    top: 50%;
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+}
+a:visited {
+    color: wheat;
+  }
