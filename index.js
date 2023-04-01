@@ -10,9 +10,22 @@ function loadContent(data){
         content = data["Page1"]
     }
 
+    
     //For every card
-    let cards = document.getElementsByClassName("card-body")
+    let cards = document.getElementsByClassName("card shadow-sm")
     for(let i = 0; i < cards.length; i++){
+        //Create and image to add 
+        const image = document.createElement("img")
+
+        //Add the source
+        image.setAttribute("src", content[i]["image"])
+
+        //Get the body section
+        let body = cards[i].querySelector(".card-body")
+
+        //Add image to card
+        cards[i].insertBefore(image,body);
+
         //Create new paragraph elements to hold the information
         const name = document.createElement("p")
         const rYear = document.createElement("p")
@@ -29,9 +42,9 @@ function loadContent(data){
         des.classList.add("card-text")
 
         //Add them to the document
-        cards[i].appendChild(name)
-        cards[i].appendChild(rYear)
-        cards[i].appendChild(des)
+        body.appendChild(name)
+        body.appendChild(rYear)
+        body.appendChild(des)
 
 
     }
